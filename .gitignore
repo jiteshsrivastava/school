@@ -43,7 +43,7 @@ src/frontend/.pnp
 src/frontend/coverage
 
 # production
-/build
+src/frontend/build
 
 # misc
 src/frontend/.DS_Store
