@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SchoolApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Spring boot loading..");
 		SpringApplication.run(SchoolApplication.class, args);
 	}
 
