@@ -11,9 +11,10 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install
+      - mv target/school-0.0.1-SNAPSHOT.jar application.jar
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/school.jar   
+    - application.jar   

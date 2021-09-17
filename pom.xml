@@ -72,8 +72,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-		</plugins>
-		<finalName>school</finalName>
+		</plugins>		
 	</build>
 
 </project>
