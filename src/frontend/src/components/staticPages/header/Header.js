@@ -38,7 +38,7 @@ export default function Header() {
           </NavDropdown> */}
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">Contact us</Nav.Link>
+          <LinkContainer to="/Contact"><Nav.Link>Contact us</Nav.Link></LinkContainer>          
           {/* <Nav.Link eventKey={2} href="#memes">
             Get A Quote
             </Nav.Link>  */}
