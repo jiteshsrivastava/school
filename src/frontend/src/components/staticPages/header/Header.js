@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Nav, Navbar, NavDropdown ,Container} from "react-bootstrap";
-import logo from "./logo.png";
 import { LinkContainer } from "react-router-bootstrap";
 
 export default function Header() {
@@ -11,7 +10,7 @@ export default function Header() {
 
       <Navbar.Brand>
         <LinkContainer to="/">
-          <Nav.Link><img src={logo} alt="logo" /></Nav.Link>
+          <Nav.Link><img src={`${process.env.REACT_APP_S3_IMG_URL}logo.png`} alt="logo" /></Nav.Link>
         </LinkContainer>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
