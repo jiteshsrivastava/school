@@ -18,7 +18,7 @@ export default function Admission() {
 							<p>Parents/guardians are asked to fillup the admission form with the utmost accuracy.</p>
 							<p>	Parents/guardians are asked to furnish the required documents with application form.</p>
 						</Card.Body>
-						<Card.Footer><Button href="document/admission.pdf" variant="primary">Download Admission Form</Button></Card.Footer>
+						<Card.Footer><Button href={`${process.env.REACT_APP_S3_DOC_URL}admission.pdf`} variant="primary">Download Admission Form</Button></Card.Footer>
 					</Card>
 				</Col>
 				

@@ -2,6 +2,7 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown ,Container} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import {BsHouseFill} from "react-icons/bs";
 
 export default function Header() {
   return (
@@ -16,10 +17,11 @@ export default function Header() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <LinkContainer to="/About"><Nav.Link>About Us</Nav.Link></LinkContainer>
-          <LinkContainer to="/Notification"><Nav.Link>Notification</Nav.Link></LinkContainer>
-          <LinkContainer to="/Facilities"><Nav.Link>Facilities</Nav.Link></LinkContainer>
-           <LinkContainer to="/Admission"><Nav.Link>Admission</Nav.Link></LinkContainer>
+            <LinkContainer to="/"><Nav.Link><BsHouseFill/> {' c'}Home</Nav.Link></LinkContainer>
+            <LinkContainer to="/About"><Nav.Link>About Us</Nav.Link></LinkContainer>
+            <LinkContainer to="/Notification"><Nav.Link>Notification</Nav.Link></LinkContainer>
+            <LinkContainer to="/Facilities"><Nav.Link>Facilities</Nav.Link></LinkContainer>
+            <LinkContainer to="/Admission"><Nav.Link>Admission</Nav.Link></LinkContainer>
         {/*   <Nav.Link href="#pricing">Career</Nav.Link>
           <NavDropdown title="Student Zone" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
